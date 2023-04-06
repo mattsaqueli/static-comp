@@ -4,7 +4,15 @@ body {
   font-family: sans-serif;
 }
 
-/* LEFT NAV BAR */
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #f3f3f3;
+}
+
+
+/* --------------- LEFT NAV BAR --------------- */
 
 nav {
   display: flex;
@@ -63,7 +71,59 @@ nav button {
 
 nav button:hover {
   cursor: pointer;
+  border-left: 3px solid darkblue;
   background-color: rgb(126, 190, 255);
 }
 
-/* SEARCH BAR AREA */
+ .info-button {
+  border-left: 3px solid darkblue;
+  background-color: rgb(126, 190, 255);
+}
+
+
+/* --------------- SEARCH BAR AREA --------------- */
+
+.search-area {
+  display: flex;
+  /* flex-shrink: 0; */
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.search-menu-button {
+  width: 80px;
+  border-style: none;
+  border-right: 1px solid black;
+}
+
+.search-area input {
+  flex-grow: 1;
+  border-style: none;
+  font-size: 15px;
+  padding-left: 1vw;
+  opacity: 60%;
+}
+
+.search-icon {
+  display: flex;
+  align-self: center;
+  padding-left: 1vw;
+}
+
+.search-bar-button {
+  width: 80px;
+  border-style: none;
+  border-left: 1px solid black;
+}
+
+.search-menu-button:hover, .search-bar-button:hover {
+  cursor: pointer;
+  background-color: rgb(232, 232, 232)
+}
+
+/* --------------- HEADER --------------- */
+
+header {
+  display: flex;
+  flex-direction: column;
+}
