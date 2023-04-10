@@ -211,13 +211,16 @@ main button:hover {
 .stats {
   display: flex;
   justify-content: space-between;
-  padding: 45px;
+  padding: 20px;
   padding-top: 60px;
   background-color: rgb(230,223,216);
 }
 
-.charts {
+.stats img {
   display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
 }
 
 .divider {
