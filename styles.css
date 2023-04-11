@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+}
+
+
+/* --------------- LEFT NAV BAR --------------- */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 156vh;
+  background-color: rgb(96, 172, 248);
+  border-right: 4px solid rgb(126, 190, 255);
+}
+
+
+nav > section {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid;
+  border-color: rgba(255, 255, 255, 0.574);
+  padding: 10px 0px 25px 0px;
+
+}
+
+nav img {
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+}
+
+nav figcaption {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+nav label {
+  color: white;
+  padding-left: 8px;
+  font-size: 14px;
+  margin: 6px;
+  opacity: 80%;
+}
+
+nav button {
+  color: white;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  border-style: none;
+  align-items: center;
+  height: 40px;
+  padding-left: 30px;
+  gap: 20px;
+  font-size: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+nav button:hover {
+  cursor: pointer;
+  border-left: 3px solid darkblue;
+  background-color: rgb(126, 190, 255);
+}
+
+ .info-button {
+  border-left: 3px solid darkblue;
+  background-color: rgb(126, 190, 255);
+}
+
+
+/* --------------- SEARCH BAR AREA --------------- */
+
+.search-area {
+  display: flex;
+  /* flex-shrink: 0; */
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.search-menu-button {
+  width: 80px;
+  border-style: none;
+  border-right: 1px solid black;
+}
+
+.search-area input {
+  flex-grow: 1;
+  border-style: none;
+  font-size: 15px;
+  padding-left: 1vw;
+  opacity: 60%;
+}
+
+.search-icon {
+  display: flex;
+  align-self: center;
+  padding-left: 1vw;
+  width: 40px;
+}
+
+.search-bar-button {
+  width: 80px;
+  border-style: none;
+  border-left: 1px solid black;
+}
+
+.search-menu-button:hover, .search-bar-button:hover {
+  cursor: pointer;
+  background-color: rgb(211, 210, 210)
+}
+
+/* --------------- HEADER --------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 40px 40px 40px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 17px;
+  font: rgb(96, 96, 243);
+}
+
+h1, h3 {
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+
+.divider-icon, .header-buttons button  {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.header-buttons .open-button {
+  display: flex;
+  align-items: center;
+  width: 85px;
+  justify-content: center;
+  gap: 5px;
+  color: green;
+}
+
+.header-buttons span {
+  font-size: 13px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: rgb(211, 210, 210)
+}
+
+/* --------------- TAB --------------- */
+
+.tabs {
+  display: flex;
+  height: 55px;
+  padding-left: 40px;
+  gap: 50px;
+}
+
+.tabs button {
+  border-style: none;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.tabs .tab-button-selected {
+  border-bottom: 3px solid rgb(126, 190, 255);
+}
+.tabs button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 3px solid rgb(126, 190, 255);
+}
+
+/* --------------- STATS / CHART AREA --------------- */
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 60px;
+  background-color: rgb(230,223,216);
+}
+
+.stats img {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.divider {
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  gap: 6px;
+  background-color: rgb(230,223,216);
+}
+
+.line {
+  height: 2px;
+  background-color: #222222;
+  flex-grow: 1;
+}
+
+/* --------------- INFO TABLE --------------- */
+
+
+.lower-info {
+  background-color: rgb(230,223,216);
+  display: flex;
+  padding: 40px;
+
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  width: 70%;
+}
+
+.description-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(126, 190, 255);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-style: none;
+  justify-content: start;
+}
+
+.description-header button {
+  background-color: rgb(19,85,143);
+  color:white;
+  border-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  height: 32px;
+  width: 70px;
+}
+
+.description-header button > span {
+  font-family: sans-serif;
+  padding-left: 3px;
+}
+
+.description-header button:hover {
+  background-color: rgb(8, 48, 83);
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #e3e3e3;
+  height: 75px;
+}
+
+tr:last-child {
+  border-style: none;
+}
+
+.col1 {
+  font-weight: bold;
+  font-size: 13px;
+  padding-left: 50px;
+}
+
+/* --------------- SOCIAL --------------- */
+
+.social {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  width: 30%;
+  gap: 15px;
+  
+}
+
+.social .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: st;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-button span {
+  margin: auto;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+.facebook-button  {
+  background-color: rgb(8, 48, 83);
+}
+
+.twitter-button  {
+  background-color: rgb(28, 130, 219);
+}
+
+.linkedin-button  {
+  background-color: rgb(45, 79, 108);
+}
+
+.social-button:hover {
+  background-color: darkblue;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:15px;
+  padding-top: 20px;
+  padding-left: 5px;
+  width: 100%;
+}
+
+.link-header {
+  display: flex;
+  justify-content: start;
+  font-size: 20px;
+}
+
+.link span {
+  font-size: 17px;
+  font-weight:normal;
+  font-family: sans-serif;  
+  padding-left: 7px;
+}
+
+.link p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.link-input-button {
+  display: flex;
+  height: 45px;
+  border-radius: 4px;
+  overflow: hidden;
+
+}
+
+.link-input-button button {
+  background-color: rgb(126, 190, 255);
+  border-style: none;
+  color: white;
+} 
+
+.link-input-button input{
+  flex-grow: 1;
+  border-style: none;
+  padding-left: 16px;
+}

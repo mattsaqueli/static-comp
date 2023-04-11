@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static Comp</title>
+</head>
+<body>
+  <nav class="nav-bar">
+    <figure>
+      <img src="assests/prince.jpg" alt="photo of Prince the good boi">
+      <figcaption>Prince Saqueli</figcaption>
+    </figure>
+    <section>
+      <label class="nav-text">Main</label>
+      <button class="nav-text"><span class="material-icons">home</span>HOME</button>
+      <button class="nav-text"><span class="material-icons">spa</span>HEALTH</button>
+      <button class="nav-text"><span class="material-icons">task</span>TASKS</button>
+      <button class="nav-text info-button"><span class="material-icons">insights</span>INFO</button>
+    </section>
+    <section>
+    <label class="nav-text">Admin</label>
+    <button class="nav-text"><span class="material-icons">download</span>IMPORT</button>
+    <button class="nav-text"><span class="material-icons">upload</span>EXPORT</button>
+    <button class="nav-text"><span class="material-icons">person</span>ACCOUNT</button>
+    <button class="nav-text"><span class="material-icons">settings</span>SETTINGS</button>
+    </section>
+    <section>
+      <label class="nav-text">Catagories</label>
+      <button class="nav-text"><span class="material-icons">check_box_outline_blank</span>EAT</button>
+      <button class="nav-text"><span class="material-icons">check_box_outline_blank</span>FETCH</button>
+      <button class="nav-text"><span class="material-icons">check_box_outline_blank</span>PLAY</button>
+      <button class="nav-text"><span class="material-icons">check_box_outline_blank</span>NAP</button>
+    </section>
+  </nav>
+  <main>
+    <section class="search-area">
+      <button class="search-menu-button material-icons">menu</button>
+      <span class="material-icons search-icon">search</span>
+      <input type="text" placeholder="Search for Prince's Info">
+      <button class="search-bar-button material-icons">person_add</button>
+      <button class="search-bar-button material-icons">calendar_month</button>
+      <button class="search-bar-button material-icons">apps</button>
+    </section>
+    <header class="info-header">
+      <div>
+        <h1>Prince The Good Boi</h1>
+        <h3><span class="material-icons">location_on</span><a href="https://www.austintexas.org/">Austin, TX</a></h3>
+      </div>
+      <div class="header-buttons">
+        <button class="material-icons open-button">fiber_manual_record<span>OPEN</span></button>
+        <button class="material-icons">bookmark</button>
+        <button class="material-icons">edit</button>
+        <button class="material-icons">delete</button>
+      </div>
+    </header>
+    <section class="tabs">
+      <button class="tab-button tab-button-selected">SUMMARY</button>
+      <button class="tab-button tab-button">HEALTH</button>
+      <button class="tab-button tab-button">ACTIVITY</button>
+      <button class="tab-button tab-button">HISTORY</button>
+      <button class="tab-button tab-button">NOTIFICATIONS</button>
+    </section>
+    <section class="stats">
+          <img src="assests/pngwing.com.png">
+          <img src="assests/pngwing.com (2).png">
+          <img src="assests/pngwing.com (1).png">
+    </section>
+    <div class="divider">
+      <div class="line"></div>
+      <button class="divider-icon material-icons">expand_less</button>
+      <div class="line"></div>
+    </div>
+    <section class="lower-info">
+      <div class="description">
+        <header class="description-header">
+          <p>PRINCE'S DESCRIPTION</p>
+          <button class="material-icons edit-button">edit<span>EDIT</span></button>
+        </header>
+        <table>
+          <tr>
+            <td class="col1">PUPPER</td>
+            <td class="col2">PRINCE</td>
+          </tr>
+          <tr>
+            <td class="col1">BIRTHDAY</td>
+            <td class="col2">12-DEC-2017</td>
+          </tr>
+          <tr>
+            <td class="col1">BIRTH LOCATION</td>
+            <td class="col2">DESTIN, FL</td>
+          </tr>
+          <tr>
+            <td class="col1">BREED</td>
+            <td class="col2">A CUTE ONE</td>
+          </tr>
+          <tr>
+            <td class="col1">STATUS</td>
+            <td class="col2">HAPPY</td>
+          </tr>
+          <tr>
+            <td class="col1">EMPLOYMENT TYPE</td>
+            <td class="col2">FULL-TIME DOGGO</td>
+          </tr>
+        </table>
+      </div>
+      <div class="social">
+        <button class="social-button material-icons facebook-button">thumb_up<span>POST TO FACEBOOK</span></button>
+        <button class="social-button material-icons linkedin-button">groups<span>POST TO LINKEDIN</span></button>
+        <button class="social-button material-icons twitter-button">pets<span>POST TO TWITTER</span></button>
+        
+        <div class="link">
+          <label class="link-header material-icons">public<span>Link with Prince</span></label>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci Neque porro quisquam est</p>
+          <div class="link-input-button">
+            <input type="text" placeholder="https://www.NotALink.com">
+            <button class="link-button">Copy</button>
+          </div>
+        </div>
+
+        <div class="link">
+          <label class="link-header material-icons">widgets<span>Use the Button Widget</span></label>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci Neque porro quisquam est</p>
+          <div class="link-input-button">
+            <input type="text" placeholder="https://www.NotALink.com">
+            <button class="link-button">Copy</button>
+          </div>
+        </div>
+
+        <div class="link">
+          <label class="link-header material-icons">mail<span>Email Prince</span></label>
+          <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci Neque porro quisquam est</p>
+          <div class="link-input-button">
+            <input type="text" placeholder="https://www.NotALink.com">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
