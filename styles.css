@@ -210,7 +210,7 @@ main button:hover {
 
 .stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 20px;
   padding-top: 60px;
   background-color: rgb(230,223,216);
@@ -218,6 +218,7 @@ main button:hover {
 
 .stats img {
   display: flex;
+  flex-direction: row;
   align-items: center;
   width: 200px;
   height: 200px;
